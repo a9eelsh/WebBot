@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+   <meta charset="UTF-8">
+    <title>URL Colors</title>
+    <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background: white;
+      width: 500px;
+      height: 800px;
+      font-size: 1rem;
+    }
+    .settings {
+      width: 100%;
+      margin: 10px;
+    }
+    textArea {
+      height: 350px;
+      width: 50%;
+    }
+    input {
+      width: 25%;
+    }
+    .note {
+      margin-top: 2px;
+      margin-bottom: 5px;
+      font-size: .8rem;
+    }
+    #expiration-time {
+      color: red;
+      margin-top: 5px;
+    }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+<body>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+
+<div id="result"></div>
+<input id="msg"></input>
+<input id="replay" name="replay">
+<button id="myBtn" >Submit</button>
+<button onclick="Clear()">Clear</button>
+<br><br><br><br><br>
+<table id="table">
+  <tr>
+    <th>#</th>
+    <th>النص</th>
+    <th>الرد</th>
+  </tr>
+  <tr id ="tbl_data">
+  </tr>
+  <tr>
+</table>
+
+</body>
+</html>
